@@ -35,6 +35,7 @@ Enable the rules that you would like to use:
 ```json
 {
   "rules": {
+    "chai-expect/no-empty-checks": 2,
     "chai-expect/no-inner-compare": 2,
     "chai-expect/no-inner-literal": 2,
     "chai-expect/missing-assertion": 2,
@@ -54,6 +55,7 @@ and just extend the config:
 
 ## Rules
 
+- `no-empty-checks` - Prevent `contains` or `equal` from being empty (and prevent `contains` from being set to the empty string)
 - `no-inner-compare` - Prevent using comparisons in the `expect()` argument
 - `no-inner-literal` - Prevent using literals in the `expect()` argument
   (`undefined`, `null`, `NaN`, `(+|-)Infinity`, `this`, booleans, numbers,

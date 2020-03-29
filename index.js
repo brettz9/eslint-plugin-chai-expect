@@ -5,6 +5,7 @@ module.exports = {
     recommended: {
       plugins: ['chai-expect'],
       rules: {
+        'chai-expect/no-empty-checks': 'error',
         'chai-expect/no-inner-compare': 'error',
         'chai-expect/no-inner-literal': 'error',
         'chai-expect/missing-assertion': 'error',
@@ -13,6 +14,7 @@ module.exports = {
     }
   },
   rules: {
+    'no-empty-checks': require('./lib/rules/no-empty-checks'),
     'no-inner-compare': require('./lib/rules/no-inner-compare'),
     'no-inner-literal': require('./lib/rules/no-inner-literal'),
     'missing-assertion': require('./lib/rules/missing-assertion'),
